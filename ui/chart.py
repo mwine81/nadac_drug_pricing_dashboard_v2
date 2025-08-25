@@ -6,7 +6,7 @@ from config import PRIMARY_COLOR
 def chart():
     return section_container(
         [
-            dmc.Title("Price Trends Over Time", order=2, c=PRIMARY_COLOR),
+            dmc.Title("Price Trends Over Time", order=2, c=PRIMARY_COLOR), # type: ignore
             dcc.Graph(figure={}, id='chart'),
         ]
     )

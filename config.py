@@ -16,4 +16,4 @@ TEXT_MUTED = '#718096'
 BORDER_COLOR = '#e2e8f0'
 
 LEGEND_PALETTE = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#7209B7', '#560BAD', 
-                  '#06FFA5', '#FFB700', '#FB8500', '#8ECAE6', '#219EBC', '#023047',
+                  '#06FFA5', '#FFB700', '#FB8500', '#8ECAE6', '#219EBC', '#023047',]

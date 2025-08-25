@@ -6,7 +6,7 @@ from config import PRIMARY_COLOR
 
 def help_section():
     return section_container([
-        dmc.Title("Help & Information", order=2, mb="md", c=PRIMARY_COLOR),
+        dmc.Title("Help & Information", order=2, mb="md", c=PRIMARY_COLOR),# type: ignore
         dmc.Group([
             dmc.Button(
                 "Dashboard Overview",
