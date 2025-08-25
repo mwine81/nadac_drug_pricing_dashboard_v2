@@ -1,0 +1,9 @@
+polars
+httpx
+pandas
+plotly
+dash
+pyarrow
+dash-mantine-components
+patito
+dash_iconify
