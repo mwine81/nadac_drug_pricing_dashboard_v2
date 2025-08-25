@@ -12,6 +12,43 @@ app = Dash()
 
 app.layout = dmc.MantineProvider(layout)
 
+# Help modal callbacks
+@app.callback(
+    Output('help-overview-modal', 'opened'),
+    Input('help-overview-btn', 'n_clicks'),
+    State('help-overview-modal', 'opened'),
+    prevent_initial_call=True
+)
+def toggle_overview_modal(n_clicks, opened):
+    return not opened
+
+@app.callback(
+    Output('help-data-modal', 'opened'),
+    Input('help-data-btn', 'n_clicks'),
+    State('help-data-modal', 'opened'),
+    prevent_initial_call=True
+)
+def toggle_data_modal(n_clicks, opened):
+    return not opened
+
+@app.callback(
+    Output('help-usage-modal', 'opened'),
+    Input('help-usage-btn', 'n_clicks'),
+    State('help-usage-modal', 'opened'),
+    prevent_initial_call=True
+)
+def toggle_usage_modal(n_clicks, opened):
+    return not opened
+
+@app.callback(
+    Output('help-technical-modal', 'opened'),
+    Input('help-technical-btn', 'n_clicks'),
+    State('help-technical-modal', 'opened'),
+    prevent_initial_call=True
+)
+def toggle_technical_modal(n_clicks, opened):
+    return not opened
+
 @app.callback(
     Output('product-select', 'data'),
     Input('drug-class-select', 'value')
