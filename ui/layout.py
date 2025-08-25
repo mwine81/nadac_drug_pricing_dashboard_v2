@@ -17,7 +17,7 @@ layout = dmc.Container(
     legend(),
     footer()
     ],
-    maw='1400px'
+    maw='1000px'
 
 )
     
