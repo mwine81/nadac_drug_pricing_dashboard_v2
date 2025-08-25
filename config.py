@@ -1,6 +1,6 @@
 from pathlib import Path
 
-DATA_DIR = Path(r'C:\Users\mwine\Projects\AUGEST_2025\dev\nadac_drug_pricing_dashboard\data')
+DATA_DIR = Path(r'data')
 DATA = DATA_DIR / "data.parquet"
 
 PRIMARY_COLOR = '#1a365d'
@@ -17,4 +17,3 @@ BORDER_COLOR = '#e2e8f0'
 
 LEGEND_PALETTE = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#7209B7', '#560BAD', 
                   '#06FFA5', '#FFB700', '#FB8500', '#8ECAE6', '#219EBC', '#023047',
-                  '#6F1D1B', '#BB9457', '#432818', '#99D98C']

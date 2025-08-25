@@ -2,11 +2,11 @@ from components.section_container import section_container
 import dash_mantine_components as dmc
 from dash import html
 from dash_iconify import DashIconify
-
+from config import PRIMARY_COLOR
 
 def help_section():
     return section_container([
-        dmc.Title("Help & Information", order=2, mb="md"),
+        dmc.Title("Help & Information", order=2, mb="md", c=PRIMARY_COLOR),
         dmc.Group([
             dmc.Button(
                 "Dashboard Overview",

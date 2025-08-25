@@ -19,7 +19,7 @@ def footer():
                                 dmc.Text("Dashboard Information", fw="bold", size="sm", style={"color": "#1a365d"})
                             ], gap="xs"),
                             dmc.Text(
-                                "Dashboard methodology inspired by 46brooklyn.com's approach to Medicare Part D data analysis. Built with modern data visualization techniques for comprehensive drug spending insights.",
+                                "Built with modern data visualization techniques for comprehensive drug spending insights.",
                                 size="xs",
                                 c="gray",
                                 lh=1.4

@@ -1,5 +1,6 @@
 import dash_mantine_components as dmc
 from dash import Dash, Input, Output, State, callback, dcc
+from typing import Any
 from figures.generate_chart import generate_chart
 from helpers import filter_chart_data, load_data, update_size_dropdown, render_legend
 from ui.layout import layout
@@ -10,7 +11,37 @@ from config import LEGEND_PALETTE
 
 app = Dash()
 
-app.layout = dmc.MantineProvider(layout)
+# Global Mantine theme for professional, consistent styling
+THEME: Any = {
+    # Custom brand scale (light -> dark) anchored on our PRIMARY_COLOR (#1a365d)
+    "colors": {
+        "brand": [
+            "#e9eff7",
+            "#d7e3f0",
+            "#c3d6ea",
+            "#a9c4df",
+            "#8bb0d3",
+            "#6b96c3",
+            "#4f80b5",
+            "#3c6da7",
+            "#2b5b93",
+            "#1a365d",
+        ]
+    },
+    "primaryColor": "brand",
+    "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    "headings": {
+        "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        "sizes": {
+            "h1": {"fontSize": "28px", "fontWeight": 700},
+            "h2": {"fontSize": "22px", "fontWeight": 700},
+            "h3": {"fontSize": "18px", "fontWeight": 700},
+        },
+    },
+    "defaultRadius": "md",
+}
+
+app.layout = dmc.MantineProvider(theme=THEME, children=layout)
 
 # Help modal callbacks
 @app.callback(
