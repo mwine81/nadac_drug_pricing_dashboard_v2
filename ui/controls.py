@@ -13,7 +13,7 @@ def controls():
                     span=4,
                     children=[
                         dmc.Select(
-                            label="Drug Class",
+                            label="Active Ingredient",
                             data=dropdown_choices("short_name"),
                             value=dropdown_choices("short_name")[0],
                             searchable=True,
