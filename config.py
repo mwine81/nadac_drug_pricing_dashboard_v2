@@ -1,5 +1,9 @@
 from pathlib import Path
 
+UPDATE_DATE = "OCTOBER 2025"
+
+HEADER_TITLE = "NADAC Drug Pricing Dashboard"
+
 DATA_DIR = Path(r'data')
 DATA = DATA_DIR / "data.parquet"
 
